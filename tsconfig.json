@@ -1,0 +1,14 @@
+{
+  "include": ["src/"],
+  "exclude": ["*.*", "pkg/"],
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "outFile": "zay.js",
+    "noEmitOnError": false,
+    "removeComments": true,
+    "lib": ["es5"],
+    "alwaysStrict": true,
+    "strict": true
+  }
+}

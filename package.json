@@ -1,0 +1,23 @@
+{
+  "name": "zay",
+  "version": "0.1.0",
+  "description": "Switch among windows by pressing key. Extension for KWin.",
+  "main": "zay.js",
+  "directories": {},
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anametologin/zay"
+  },
+  "author": "Vjatcheslav V. Kolchkov <akl334@protonmail.ch>",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/anametologin/zay/issues"
+  },
+  "homepage": "https://github.com/anametologin/zay#readme"
+}

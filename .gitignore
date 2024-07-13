@@ -1,0 +1,10 @@
+/pkg/
+/node_modules/
+
+/TODO.md
+/zay.js
+/package-lock.json
+
+/*.qml
+*.kwinscript
+*.bak
