@@ -22,7 +22,7 @@ Item {
 
     function show(hops) {
         if (popupComponent == null){
-            // console.log(`show function: hops=${hops}`);
+            console.log(`show function: hops=${hops}`);
             popupComponent = Qt.createComponent("popup.qml");
             // console.log(`component.status=${popupComponent.status}`)
             if (popupComponent.status == Component.Ready){
@@ -38,7 +38,11 @@ Item {
     }
 
     function finishCreation(hops){
-        if (popups.length  !== 0){ popups = []}
+        if (popups.length  !== 0){
+            console.log(`popups_length: ${popups.length}`);
+            popups.forEach((popup) => popup.destroy());
+            popups = [];
+        }
         for (var i = 0; i < hops.length; i++) {
             var title = hops[i][0];
             var x = hops[i][1];
@@ -53,18 +57,11 @@ Item {
     function hidePopups(){
         for (var i = 0; i<popups.length; i++) {
             popups[i].hide();
+            popups.forEach((popup) => popup.destroy());
+            popups = [];
         }
     }
 
-    // Loader {
-    //     id: popupDialog
-    //     source: "popup.qml"
-    //
-    //     // function show(text, p) {
-    //     //     // var area = Workspace.clientArea(KWin.FullScreenArea, Workspace.activeScreen, Workspace.currentDesktop);
-    //     //     this.item.show(text, p, 5000);
-    //     // }
-    // }
 
     Component.onCompleted: {
         console.log("Zay: starting the script");

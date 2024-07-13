@@ -46,6 +46,7 @@ PlasmaCore.Dialog {
 
             onTriggered: {
                 popupDialog.visible = false;
+                popupDialog.destroy();
             }
         }
     }
