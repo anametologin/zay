@@ -1,7 +1,4 @@
 # Zay
-
-=====
-
 Switch among windows by pressing the key. Extension for KWin 6.
 
 Zay works as the set of two programs:
@@ -9,7 +6,7 @@ Zay works as the set of two programs:
 - zay-x.x.x.kwinscript (this repository)
 - [key press absorber program]
 
-[key press absorber program]: (https://github.com/anametologin/zayka)
+[key press absorber program]: https://github.com/anametologin/zayka
 
 ![screenshot](img/zay.gif)
 
@@ -44,7 +41,7 @@ Zay works as the set of two programs:
 
 ## Installation
 
-You have to install `**both**` parts: this kwinscript and [key press absorber program]
+You have to install __both__ parts: this kwinscript and [key press absorber program]
 
 ### Install zay-x.x.x.kwinscript package file
 
@@ -86,9 +83,9 @@ The generated package file can be imported from "KWin Script" dialog.
 1. Add zayka binary file to any place and add it to autostart.
    To add to autostart:
 
-- type in KDE search autostart
-- push `+Add...` button and chose +Add Application
-- beside with edit box there is button `open file dialog` push it
+- type in KDE search `autostart`
+- push `+Add...` button and choose `+Add Application`
+- beside edit box, there is button `open file dialog` - push it
 - search and choose zayka binary file and push `Open` and `Ok`
 
 2. Reboot.
